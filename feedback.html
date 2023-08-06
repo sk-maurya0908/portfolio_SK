@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Feedback</h1>
+    <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+
+        <button type="button" onclick="submitFeedback()">Submit</button>
+    </form>
+
+    <h2 id="feedbackResult" style="display: none;"></h2>
+
+    <script src="scripts/feedback.js"></script>
+</body>
+</html>
