@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hobbies</title>
-    <link rel="stylesheet" href="styles/hobbies.css">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="education.html">Education</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
     <h1>Hobbies</h1>
     <form id="hobbiesForm">
         <label>
-            <input type="checkbox" name="hobbies" value="hobby1"> Hobby 1
+            <input type="checkbox" name="hobbies" value="Basketball"> Basketball
         </label>
         <label>
-            <input type="checkbox" name="hobbies" value="hobby2"> Hobby 2
+            <input type="checkbox" name="hobbies" value="Sketching"> Sketching
         </label>
-        <label>
-            <input type="checkbox" name="hobbies" value="hobby3"> Hobby 3
-        </label>
-        <!-- Add more hobbies as needed -->
         <button type="button" onclick="showDescriptions()">Learn More</button>
     </form>
 
     <div id="descriptionContainer"></div>
-
-    <script src="scripts/hobbies.js"></script>
 </body>
 </html>

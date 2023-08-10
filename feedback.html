@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function submitFeedback(){
+            var name = document.getElementById("name").value;
+            var contact = document.getElementById("contact").value;
+            var msg = "Thank you "+name+","+contact+" for your valuable feedback";
+            alert(msg);
+        }
+    </script>
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="education.html">Education</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
     <h1>Feedback</h1>
     <form id="feedbackForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="contact">Contact Number:</label>
-        <input type="text" id="contact" name="contact" required>
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required>
 
-        <label for="feedback">Feedback:</label>
-        <textarea id="feedback" name="feedback" required></textarea>
-
+            <label for="feedback-in">Feedback:</label>
+            <textarea id="feedback-in" name="feedback" required></textarea>
+        </fieldset>
         <button type="button" onclick="submitFeedback()">Submit</button>
     </form>
-
-    <h2 id="feedbackResult" style="display: none;"></h2>
-
-    <script src="scripts/feedback.js"></script>
 </body>
 </html>
